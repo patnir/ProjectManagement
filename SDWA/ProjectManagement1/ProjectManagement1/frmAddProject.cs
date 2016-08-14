@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 public partial class frmAddProject : Form
@@ -20,7 +21,7 @@ public partial class frmAddProject : Form
         }
 
         mProject.Title = txtProjectTitle.Text.Trim();
-
+        mProject.Tasks = new List<clsTask>();
         DialogResult = DialogResult.OK; 
     }
 
@@ -39,6 +40,4 @@ public partial class frmAddProject : Form
     {
         MessageBox.Show(errorMessage, Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
     }
-
-
 }

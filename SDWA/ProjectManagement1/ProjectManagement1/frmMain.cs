@@ -68,11 +68,51 @@ public partial class frmMain : Form
             messageBoxOK("Select Project to add new Task to");
             return;
         }
+
+        int index = cmbProjects.SelectedIndex;
+
+        clsTask task = new clsTask();
+
+        frmAddTask addTask = new frmAddTask(task, mProjects[index]);
+
+        if (addTask.ShowDialog() == DialogResult.OK)
+        {
+            mProjects[index].Tasks.Add(task);
+        }
+
+        updateTaskComboBox();
+
+        cmbTasks.SelectedIndex = mProjects[index].Tasks.Count - 1;
+    }
+
+    private void updateTaskComboBox()
+    {
+        cmbTasks.Items.Clear();
+        cmbTasks.Text = "";
+
+        int index = cmbProjects.SelectedIndex;
+
+        if (mProjects[index].Tasks == null)
+        {
+            return;
+        }
+
+        foreach (clsTask task in mProjects[index].Tasks)
+        {
+            cmbTasks.Items.Add(task.Title);
+        }
+
+        cmbTasks.SelectedIndex = mProjects[index].Tasks.Count - 1;
     }
 
     private void messageBoxOK(string errorMessage)
     {
         MessageBox.Show(errorMessage, Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+    }
+
+    private void cmbProjects_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        updateTaskComboBox();
     }
 
 }

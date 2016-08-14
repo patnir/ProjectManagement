@@ -79,6 +79,9 @@
     <EmbeddedResource Include="frmAddProject.resx">
       <DependentUpon>frmAddProject.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddTask.resx">
+      <DependentUpon>frmAddTask.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddUpdateEntry.resx">
       <DependentUpon>frmAddUpdateEntry.cs</DependentUpon>
     </EmbeddedResource>

@@ -7,3 +7,4 @@ C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement
 C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\obj\Debug\ProjectManagement1.exe
 C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\obj\Debug\ProjectManagement1.pdb
 C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\obj\Debug\frmAddProject.resources
+C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\obj\Debug\frmAddTask.resources

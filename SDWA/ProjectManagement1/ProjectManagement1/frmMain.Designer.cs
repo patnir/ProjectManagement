@@ -49,6 +49,7 @@ partial class frmMain
             this.cmbProjects.Name = "cmbProjects";
             this.cmbProjects.Size = new System.Drawing.Size(121, 21);
             this.cmbProjects.TabIndex = 0;
+            this.cmbProjects.SelectedIndexChanged += new System.EventHandler(this.cmbProjects_SelectedIndexChanged);
             // 
             // cmbTasks
             // 
