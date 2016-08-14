@@ -76,6 +76,9 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmAddProject.resx">
+      <DependentUpon>frmAddProject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddUpdateEntry.resx">
       <DependentUpon>frmAddUpdateEntry.cs</DependentUpon>
     </EmbeddedResource>

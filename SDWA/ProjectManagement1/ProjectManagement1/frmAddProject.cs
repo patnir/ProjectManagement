@@ -1,20 +1,44 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjectManagement1
+public partial class frmAddProject : Form
 {
-    public partial class frmAddProject : Form
+    private clsProject mProject;
+
+    public frmAddProject(clsProject project)
     {
-        public frmAddProject()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+
+        mProject = project;
     }
+
+    private void btnAddNewProject_Click(object sender, EventArgs e)
+    {
+        if (validateInput() == false)
+        {
+            return;
+        }
+
+        mProject.Title = txtProjectTitle.Text.Trim();
+
+        DialogResult = DialogResult.OK; 
+    }
+
+    private bool validateInput()
+    {
+        if (txtProjectTitle.Text.Trim().Length == 0)
+        {
+            messageBoxOK("Project Name is required");
+            txtProjectTitle.Focus();
+            return false;
+        }
+        return true;
+    }
+
+    private void messageBoxOK(string errorMessage)
+    {
+        MessageBox.Show(errorMessage, Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+    }
+
+
 }

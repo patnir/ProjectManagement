@@ -13,6 +13,28 @@ public partial class frmAddUpdateEntry : Form
     {
         InitializeComponent();
 
+        mAddUpdateMode = addUpdateMode;
+        mEntry = entry;
+
+        Text = addUpdateMode + " Entry";
+
+        if (addUpdateMode == "update")
+        {
+            cmbDate.Items.Add(mEntry.Date.ToShortDateString());
+
+        }
+
+        // setting dates for Date combo box
+
+        foreach (DateTime date in last7Days)
+        {
+            cmbDate.Items.Add(date.ToShortDateString());
+
+            txtDescription.Text = mEntry.Description;
+
+            nudHours.Value = decimal.Parse(mEntry.Hours.ToString());
+        }
+
         last7Days = new List<DateTime>();
 
         DateTime todayDate = DateTime.Today;
@@ -22,22 +44,6 @@ public partial class frmAddUpdateEntry : Form
             last7Days.Add(todayDate.AddDays(-1 * i));
         }
 
-        foreach (DateTime date in last7Days)
-        {
-            cmbDate.Items.Add(date.ToShortDateString());
-        }
-
         cmbDate.SelectedIndex = 0;
-
-        mAddUpdateMode = addUpdateMode;
-
-        mEntry = entry;
-
-        Text = addUpdateMode + " Entry";
-
-        if (addUpdateMode == "update")
-        {
-            
-        }
     }
 }

@@ -30,13 +30,13 @@
             this.lblProject = new System.Windows.Forms.Label();
             this.cmbTasks = new System.Windows.Forms.ComboBox();
             this.cmbProjects = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.lblHours = new System.Windows.Forms.Label();
             this.lblDescription = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nudHours = new System.Windows.Forms.NumericUpDown();
             this.cmbDate = new System.Windows.Forms.ComboBox();
             this.lblStartDate = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudHours)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTask
@@ -73,13 +73,13 @@
             this.cmbProjects.Size = new System.Drawing.Size(121, 21);
             this.cmbProjects.TabIndex = 4;
             // 
-            // textBox1
+            // txtDescription
             // 
-            this.textBox1.Location = new System.Drawing.Point(28, 150);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(623, 177);
-            this.textBox1.TabIndex = 8;
+            this.txtDescription.Location = new System.Drawing.Point(28, 150);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(623, 177);
+            this.txtDescription.TabIndex = 8;
             // 
             // lblHours
             // 
@@ -99,23 +99,23 @@
             this.lblDescription.TabIndex = 10;
             this.lblDescription.Text = "Description";
             // 
-            // numericUpDown1
+            // nudHours
             // 
-            this.numericUpDown1.DecimalPlaces = 2;
-            this.numericUpDown1.Increment = new decimal(new int[] {
+            this.nudHours.DecimalPlaces = 2;
+            this.nudHours.Increment = new decimal(new int[] {
             25,
             0,
             0,
             131072});
-            this.numericUpDown1.Location = new System.Drawing.Point(378, 79);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.nudHours.Location = new System.Drawing.Point(378, 79);
+            this.nudHours.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(75, 20);
-            this.numericUpDown1.TabIndex = 11;
+            this.nudHours.Name = "nudHours";
+            this.nudHours.Size = new System.Drawing.Size(75, 20);
+            this.nudHours.TabIndex = 11;
             // 
             // cmbDate
             // 
@@ -141,17 +141,17 @@
             this.ClientSize = new System.Drawing.Size(683, 339);
             this.Controls.Add(this.cmbDate);
             this.Controls.Add(this.lblStartDate);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.nudHours);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.lblHours);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.lblTask);
             this.Controls.Add(this.lblProject);
             this.Controls.Add(this.cmbTasks);
             this.Controls.Add(this.cmbProjects);
             this.Name = "frmAddUpdateEntry";
             this.Text = "frmAddUpdateEntry";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudHours)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,10 +163,10 @@
     private System.Windows.Forms.Label lblProject;
     private System.Windows.Forms.ComboBox cmbTasks;
     private System.Windows.Forms.ComboBox cmbProjects;
-    private System.Windows.Forms.TextBox textBox1;
+    private System.Windows.Forms.TextBox txtDescription;
     private System.Windows.Forms.Label lblHours;
     private System.Windows.Forms.Label lblDescription;
-    private System.Windows.Forms.NumericUpDown numericUpDown1;
+    private System.Windows.Forms.NumericUpDown nudHours;
     private System.Windows.Forms.ComboBox cmbDate;
     private System.Windows.Forms.Label lblStartDate;
 }
