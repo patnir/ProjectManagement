@@ -1,1 +1,8 @@
-C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\bin\Debug\ProjectManagement1.exe.config
+C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\obj\Debug\ProjectManagement1.csprojResolveAssemblyReference.cache
+C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\obj\Debug\frmAddUpdateEntry.resources
+C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\obj\Debug\frmMain.resources
+C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\obj\Debug\ProjectManagement1.csproj.GenerateResource.Cache
+C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\bin\Debug\ProjectManagement1.exe
+C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\bin\Debug\ProjectManagement1.pdb
+C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\obj\Debug\ProjectManagement1.exe
+C:\Users\SUNITA\Documents\Visual Studio 2013\Projects\PMT\SDWA\ProjectManagement1\ProjectManagement1\obj\Debug\ProjectManagement1.pdb

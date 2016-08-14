@@ -1,20 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjectManagement1
+public partial class frmMain : Form
 {
-    public partial class frmMain : Form
+    public static void Main()
     {
-        public frmMain()
+        frmMain main = new frmMain();
+        Application.Run(main);
+    }
+
+    public frmMain()
+    {
+        InitializeComponent();
+    }
+
+    private void btnAddEntry_Click(object sender, EventArgs e)
+    {
+        clsEntry entry = new clsEntry();
+
+        frmAddUpdateEntry addUpdate = new frmAddUpdateEntry("add", entry);
+
+        if (addUpdate.ShowDialog() == DialogResult.OK)
         {
-            InitializeComponent();
+            refreshListView();
         }
+    }
+
+    private void refreshListView()
+    {
+        return;
     }
 }
