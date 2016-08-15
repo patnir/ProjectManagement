@@ -36,6 +36,7 @@
             this.nudHours = new System.Windows.Forms.NumericUpDown();
             this.cmbDate = new System.Windows.Forms.ComboBox();
             this.lblStartDate = new System.Windows.Forms.Label();
+            this.btnAddUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudHours)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +60,7 @@
             // 
             // cmbTasks
             // 
+            this.cmbTasks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTasks.FormattingEnabled = true;
             this.cmbTasks.Location = new System.Drawing.Point(83, 78);
             this.cmbTasks.Name = "cmbTasks";
@@ -67,11 +69,13 @@
             // 
             // cmbProjects
             // 
+            this.cmbProjects.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProjects.FormattingEnabled = true;
             this.cmbProjects.Location = new System.Drawing.Point(83, 29);
             this.cmbProjects.Name = "cmbProjects";
             this.cmbProjects.Size = new System.Drawing.Size(121, 21);
             this.cmbProjects.TabIndex = 4;
+            this.cmbProjects.SelectedIndexChanged += new System.EventHandler(this.cmbProjects_SelectedIndexChanged);
             // 
             // txtDescription
             // 
@@ -119,6 +123,7 @@
             // 
             // cmbDate
             // 
+            this.cmbDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDate.FormattingEnabled = true;
             this.cmbDate.Location = new System.Drawing.Point(378, 29);
             this.cmbDate.Name = "cmbDate";
@@ -134,11 +139,22 @@
             this.lblStartDate.TabIndex = 12;
             this.lblStartDate.Text = "Date";
             // 
+            // btnAddUpdate
+            // 
+            this.btnAddUpdate.Location = new System.Drawing.Point(555, 61);
+            this.btnAddUpdate.Name = "btnAddUpdate";
+            this.btnAddUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnAddUpdate.TabIndex = 14;
+            this.btnAddUpdate.Text = "Add";
+            this.btnAddUpdate.UseVisualStyleBackColor = true;
+            this.btnAddUpdate.Click += new System.EventHandler(this.btnAddUpdate_Click);
+            // 
             // frmAddUpdateEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 339);
+            this.ClientSize = new System.Drawing.Size(683, 344);
+            this.Controls.Add(this.btnAddUpdate);
             this.Controls.Add(this.cmbDate);
             this.Controls.Add(this.lblStartDate);
             this.Controls.Add(this.nudHours);
@@ -169,4 +185,5 @@
     private System.Windows.Forms.NumericUpDown nudHours;
     private System.Windows.Forms.ComboBox cmbDate;
     private System.Windows.Forms.Label lblStartDate;
+    private System.Windows.Forms.Button btnAddUpdate;
 }

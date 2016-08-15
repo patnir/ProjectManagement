@@ -44,6 +44,7 @@ partial class frmMain
             // 
             // cmbProjects
             // 
+            this.cmbProjects.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProjects.FormattingEnabled = true;
             this.cmbProjects.Location = new System.Drawing.Point(71, 36);
             this.cmbProjects.Name = "cmbProjects";
@@ -53,6 +54,7 @@ partial class frmMain
             // 
             // cmbTasks
             // 
+            this.cmbTasks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTasks.FormattingEnabled = true;
             this.cmbTasks.Location = new System.Drawing.Point(71, 85);
             this.cmbTasks.Name = "cmbTasks";
@@ -97,6 +99,7 @@ partial class frmMain
             // 
             // cmbStartDate
             // 
+            this.cmbStartDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbStartDate.FormattingEnabled = true;
             this.cmbStartDate.Location = new System.Drawing.Point(372, 36);
             this.cmbStartDate.Name = "cmbStartDate";
@@ -105,6 +108,7 @@ partial class frmMain
             // 
             // cmbEndDate
             // 
+            this.cmbEndDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEndDate.FormattingEnabled = true;
             this.cmbEndDate.Location = new System.Drawing.Point(372, 85);
             this.cmbEndDate.Name = "cmbEndDate";
@@ -185,7 +189,6 @@ partial class frmMain
 
     #endregion
 
-    private System.Windows.Forms.ComboBox cmbProjects;
     private System.Windows.Forms.ComboBox cmbTasks;
     private System.Windows.Forms.Label lblProject;
     private System.Windows.Forms.Label lblTask;
@@ -198,4 +201,5 @@ partial class frmMain
     private System.Windows.Forms.Button btnAddEntry;
     private System.Windows.Forms.Button btnAddProject;
     private System.Windows.Forms.Button btnAddTask;
+    private System.Windows.Forms.ComboBox cmbProjects;
 }

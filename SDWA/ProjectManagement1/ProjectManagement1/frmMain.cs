@@ -4,8 +4,7 @@ using System.Windows.Forms;
 
 public partial class frmMain : Form
 {
-
-    public List<clsProject> mProjects;
+    public static List<clsProject> mProjects;
 
     public static void Main()
     {
@@ -25,10 +24,12 @@ public partial class frmMain : Form
 
         frmAddUpdateEntry addUpdate = new frmAddUpdateEntry("add", entry);
 
-        if (addUpdate.ShowDialog() == DialogResult.OK)
+        if (addUpdate.ShowDialog() != DialogResult.OK)
         {
-            refreshListView();
+            return;
         }
+
+        refreshListView();
     }
 
     private void refreshListView()
@@ -42,11 +43,13 @@ public partial class frmMain : Form
 
         frmAddProject addProject = new frmAddProject(project);
 
-        if (addProject.ShowDialog() == DialogResult.OK)
+        if (addProject.ShowDialog() != DialogResult.OK)
         {
-            mProjects.Add(project);
-            updateProjectComboBox();
+            return;
         }
+
+        mProjects.Add(project);
+        updateProjectComboBox();
     }
 
     private void updateProjectComboBox()
@@ -75,10 +78,12 @@ public partial class frmMain : Form
 
         frmAddTask addTask = new frmAddTask(task, mProjects[index]);
 
-        if (addTask.ShowDialog() == DialogResult.OK)
+        if (addTask.ShowDialog() != DialogResult.OK)
         {
-            mProjects[index].Tasks.Add(task);
+            return;    
         }
+
+        mProjects[index].Tasks.Add(task);
 
         updateTaskComboBox();
 
